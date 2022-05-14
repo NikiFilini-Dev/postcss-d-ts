@@ -137,7 +137,7 @@ function writer(
 ) {
   return async({source}: WithSource) => {
     //TODO ? Change `sort` with option
-    const keys = $keys(identifiers).sort()
+    const keys = $keys(identifiers).sort((a,b) => a.localeCompare(b))
     , file = source!.input.file!
     , target = `${file}.d.ts`
     , lines = replaceMultiplicated(
