@@ -41,9 +41,9 @@ creator8 = (opts?: Options) => {
         const warn = optsCheck(options)
 
         warn && result.warn(warn)
-      } catch ({message}) {
+      } catch (err) {
         // TODO throw error
-        result.warn(message)
+        result.warn((err as {message: string}).message)
 
         return {}
       }

@@ -1,6 +1,0 @@
-{
-  "$schema": "https://askirmas.github.io/postcss-d-ts/postconfig.schema.json",
-  "plugins": {
-    "postcss-d-ts/dist/7": {}
-  }
-}
