@@ -1,6 +1,6 @@
 {
-  "name": "postcss-d-ts",
-  "version": "1.3.0",
+  "name": "@nikifilini/postcss-d-ts",
+  "version": "1.3.1",
   "description": "PostCSS plugin to generate `.d.ts` of all used CSS classes and ids in imported stylesheets",
   "homepage": "https://github.com/askirmas/postcss-d-ts#readme",
   "keywords": [
@@ -26,8 +26,7 @@
   "scripts": {
     "test": "npm run jest",
     "build": "npm run compile",
-    "compile": "tsc --project tsconfig.compile.json",
-    "precompile": "rm -rf docs dist unpacked && mkdir docs",
+    "compile": "tsc --project tsconfig.compile.json && cp src/*.d.ts dist/",
     "jest": "jest --runInBand --detectOpenHandles",
     "np": "np",
     "eslint": "eslint --fix ."

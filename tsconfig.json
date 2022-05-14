@@ -10,10 +10,7 @@
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
     "keyofStringsOnly": false,
-    "lib": [
-      "dom.iterable",
-      "ES2019"
-    ],
+    "lib": ["dom.iterable", "ES2019"],
     "module": "CommonJS",
     "moduleResolution": "node",
     "noImplicitReturns": true,
@@ -28,10 +25,7 @@
     "sourceMap": true,
     "strict": true,
     "target": "ES2019",
-    "types": [
-      "node",
-      "jest"
-    ]
+    "types": ["node", "jest"]
   },
   "exclude": [
     "node_modules",
@@ -40,8 +34,5 @@
     "__recipes__",
     "configs"
   ],
-  "include": [
-    "**/*.ts",
-    "**/*.json"
-  ]
+  "include": ["**/*.ts", "**/*.json"]
 }
